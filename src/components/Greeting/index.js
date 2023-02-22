@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import { ImgMandala, ImgSwastyastu } from '../../asstes';
 
 export default function Greeting() {
-    const sectionRef = useRef(null);
-    const [isVisible, setIsVisible] = useState(false);
+    const sectionRef = useRef(null)
+    const [isVisible, setIsVisible] = useState(false)
     useEffect(() => {
         let node = sectionRef.current;
         const observer = new IntersectionObserver(
@@ -27,7 +27,7 @@ export default function Greeting() {
                 node = null;
             }
         };
-    }, [sectionRef]);
+    }, [sectionRef])
     return (
         <section className='h-fit' ref={sectionRef}>
             <div className="relative h-60 w-full">

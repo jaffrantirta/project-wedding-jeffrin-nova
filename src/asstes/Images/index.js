@@ -4,6 +4,7 @@ import ImgLove from './love.png'
 import ImgCuciTangan from './cuci-tangan.png'
 import ImgJagaJarak from './jaga-jarak.png'
 import ImgPakaiMasker from './pakai-masker.png'
+import ImgSanti from './om-santi.png'
 
 export {
     ImgSwastyastu,
@@ -11,5 +12,6 @@ export {
     ImgLove,
     ImgCuciTangan,
     ImgJagaJarak,
-    ImgPakaiMasker
+    ImgPakaiMasker,
+    ImgSanti
 }

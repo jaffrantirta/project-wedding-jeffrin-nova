@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ImgCuciTangan, ImgJagaJarak, ImgPakaiMasker } from '../../asstes/Images';
+import Button from '../Button';
 
 export default function EventDetails() {
     const sectionRef = useRef(null);
@@ -36,7 +37,7 @@ export default function EventDetails() {
                 <p className={`text-sm md:text-xl transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>Minggu, 16 April 2023</p>
                 <p className={`text-sm md:text-xl transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>Pukul 13.00 WITA - Selesai</p>
                 <p className={`text-sm md:text-xl transition-all duration-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'} mb-7`}>Br. Apuan, Desa Apuan, Kecamatan Baturiti, Tabanan</p>
-                <button className={`px-6 py-3 rounded-full shadow-xl bg-primary text-white transition-all duration-150 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>Map Lokasi Acara</button>
+                <Button customStyle={`transition-all duration-150 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`} text={`Map Lokasi Acara`} />
             </div>
             <div className={`text-sm md:text-xl p-2 md:p-10 rounded-3xl text-center w-5/6`}>
                 <div className={`mb-5`}>

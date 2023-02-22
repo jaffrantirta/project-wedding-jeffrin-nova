@@ -5,6 +5,7 @@ import ImgCuciTangan from './cuci-tangan.png'
 import ImgJagaJarak from './jaga-jarak.png'
 import ImgPakaiMasker from './pakai-masker.png'
 import ImgSanti from './om-santi.png'
+import ImgBCA from './bca.png'
 
 export {
     ImgSwastyastu,
@@ -13,5 +14,6 @@ export {
     ImgCuciTangan,
     ImgJagaJarak,
     ImgPakaiMasker,
-    ImgSanti
+    ImgSanti,
+    ImgBCA
 }

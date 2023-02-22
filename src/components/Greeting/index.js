@@ -37,12 +37,6 @@ export default function Greeting() {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
             <div className='bg-primary justify-center flex flex-col p-10'>
                 <img alt='o-swastyastu' src={ImgSwastyastu} className={`w-fit h-auto md:h-fit self-center transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-24'}`} />
                 <p className={`text-center text-white font-primary px-5 md:px-40  transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}> Atas asung kertha wara nugraha Ida Sang Hyang Widhi Wasa/ Tuhan Yang Maha Esa, kami bermaksud mengundang Bapak/ Ibu/ Saudara/ i pada Upacara Manusa Yadnya Pawiwahan putra dan putri kami. </p>

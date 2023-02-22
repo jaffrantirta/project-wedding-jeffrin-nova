@@ -44,6 +44,13 @@ export default function CardCountdown({ text, targetDate, value }) {
                 minutes: Math.floor((difference / 1000 / 60) % 60),
                 seconds: Math.floor((difference / 1000) % 60)
             };
+        } else {
+            timeLeft = {
+                days: '00',
+                hours: '00',
+                minutes: '00',
+                seconds: '00'
+            };
         }
 
         return timeLeft;

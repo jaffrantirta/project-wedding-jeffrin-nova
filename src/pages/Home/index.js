@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrideGroom, Countdown, DigitalGift, EventDetails, Greeting, Hero, Spell } from '../../components'
+import { BrideGroom, Countdown, DigitalGift, EventDetails, Galleries, Greeting, Hero, Spell } from '../../components'
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <EventDetails />
       <Spell />
       <DigitalGift />
+      <Galleries />
     </div>
   )
 }

@@ -5,6 +5,7 @@ import Countdown from "./Countdown";
 import EventDetails from "./EventDetails";
 import Spell from "./Spell";
 import DigitalGift from "./DigitalGift";
+import Galleries from "./Galleries";
 
 export {
     Hero,
@@ -13,5 +14,6 @@ export {
     Countdown,
     EventDetails,
     Spell,
-    DigitalGift
+    DigitalGift,
+    Galleries
 }

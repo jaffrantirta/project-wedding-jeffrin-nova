@@ -4,7 +4,7 @@ import CardCountdown from '../CardCountdown';
 export default function Countdown() {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
-    const targetDate = '2022-04-16T00:00:00Z'
+    const targetDate = '2023-04-16T00:00:00Z'
     useEffect(() => {
         let node = sectionRef.current;
         const observer = new IntersectionObserver(

@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, {
+    // useState,
+    // useEffect 
+} from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const Carousel = ({ isTop = false, text, topText, botText, images }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+    // const [currentIndex, setCurrentIndex] = useState(0);
 
     const settings = {
         dots: false,
@@ -15,9 +18,9 @@ const Carousel = ({ isTop = false, text, topText, botText, images }) => {
         autoplay: true,
         autoplaySpeed: 3500,
         arrows: false,
-        afterChange: (index) => {
-            setCurrentIndex(index);
-        },
+        // afterChange: (index) => {
+        //     setCurrentIndex(index);
+        // },
     };
 
     // useEffect(() => {

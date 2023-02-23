@@ -7,6 +7,7 @@ import Spell from "./Spell";
 import DigitalGift from "./DigitalGift";
 import Galleries from "./Galleries";
 import WishingAndGreeting from "./WishingAndGreeting";
+import Footer from "./Footer";
 
 export {
     Hero,
@@ -17,5 +18,6 @@ export {
     Spell,
     DigitalGift,
     Galleries,
-    WishingAndGreeting
+    WishingAndGreeting,
+    Footer
 }

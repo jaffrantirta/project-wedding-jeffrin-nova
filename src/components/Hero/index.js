@@ -1,8 +1,17 @@
 import React, { useEffect, useRef, useState } from 'react'
+import Carousel from '../Carousel';
 
 export default function Hero() {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
+    const images = [
+        {
+            url: 'https://sepucuksurat.id/wp-content/uploads/2022/12/12-768x513.jpg'
+        },
+        {
+            url: 'https://sepucuksurat.id/wp-content/uploads/2022/12/12-768x513.jpg'
+        }
+    ]
     useEffect(() => {
         let node = sectionRef.current;
         const observer = new IntersectionObserver(
@@ -28,12 +37,8 @@ export default function Hero() {
         };
     }, [sectionRef]);
     return (
-        <section className="h-screen bg-slate-900 p-10" ref={sectionRef}>
-            <div className={`text-slate-900 text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-40'}`}>
-                <h1 className='text-center text-slate-200 font-primary text-xl'>The Wedding of</h1>
-                <h1 className='text-center text-slate-200 font-third text-6xl'>"Jeffrin & Nova"</h1>
-                <h1 className='text-center text-slate-200 font-primary'>Minggu, 16 April 2023</h1>
-            </div>
+        <section className="h-screen" ref={sectionRef}>
+            <Carousel isTop={true} images={images} text={`Jeffrin & Novania`} topText={`The Wedding of`} botText={`Minggu, 16 April 2023`} />
         </section>
     )
 }

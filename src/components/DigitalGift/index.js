@@ -65,7 +65,7 @@ export default function DigitalGift() {
                     <img alt='bca' src={ImgBCA} className='w-40 h-auto' />
                     <p className='mt-4'>BCA 2323232323 a/n Jeffrin Martiana</p>
                     <div className='relative'>
-                        <div class={`absolute h-full w-full rounded-full bg-rose-800 ${isClickedGroom ? 'animate-ping opacity-75 block' : 'opacity-0 hidden'}`}></div>
+                        <div className={`absolute h-full w-full rounded-full bg-rose-800 ${isClickedGroom ? 'animate-ping opacity-75 block' : 'opacity-0 hidden'}`}></div>
                         <Button text='salin rekening' onClick={() => copyToClipboard('hai', 'groom')} />
                     </div>
                 </div>
@@ -73,7 +73,7 @@ export default function DigitalGift() {
                     <img alt='bca' src={ImgBCA} className='w-40 h-auto' />
                     <p className='mt-4'>BCA 2323232323 a/n Luh Novania Lestari</p>
                     <div className='relative'>
-                        <div class={`absolute h-full w-full rounded-full bg-rose-800 ${isClickedBride ? 'animate-ping opacity-75 block' : 'opacity-0 hidden'}`}></div>
+                        <div className={`absolute h-full w-full rounded-full bg-rose-800 ${isClickedBride ? 'animate-ping opacity-75 block' : 'opacity-0 hidden'}`}></div>
                         <Button text='salin rekening' onClick={() => copyToClipboard('hai', 'bride')} />
                     </div>
                 </div>

@@ -1,0 +1,29 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-jeffrinnova-staging-30319-authRole",
+      "UnauthRoleArn": "arn:aws:iam::735896469135:role/amplify-jeffrinnova-staging-30319-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::735896469135:role/amplify-jeffrinnova-staging-30319-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-jeffrinnova-staging-30319-deployment",
+      "UnauthRoleName": "amplify-jeffrinnova-staging-30319-unauthRole",
+      "StackName": "amplify-jeffrinnova-staging-30319",
+      "StackId": "arn:aws:cloudformation:us-east-1:735896469135:stack/amplify-jeffrinnova-staging-30319/a0125ac0-b326-11ed-8b2e-129d01248363",
+      "AmplifyAppId": "d2h72hmi09mmr7"
+    },
+    "categories": {
+      "function": {
+        "commentFunction": {
+          "deploymentBucketName": "amplify-jeffrinnova-staging-30319-deployment",
+          "s3Key": "amplify-builds/commentFunction-785a525065506b595763-build.zip"
+        }
+      },
+      "storage": {
+        "weddingDB": {}
+      },
+      "api": {
+        "wedding": {}
+      }
+    }
+  }
+}

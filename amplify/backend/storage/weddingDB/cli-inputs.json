@@ -1,0 +1,14 @@
+{
+  "resourceName": "weddingDB",
+  "tableName": "comments",
+  "partitionKey": {
+    "fieldName": "name",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "comment",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

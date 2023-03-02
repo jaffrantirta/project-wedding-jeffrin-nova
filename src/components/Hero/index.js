@@ -1,13 +1,14 @@
 import React from 'react'
+import { PS1L, PS9L } from '../../asstes/PhotoShots';
 import Carousel from '../Carousel';
 
 export default function Hero() {
     const images = [
         {
-            url: 'https://sepucuksurat.id/wp-content/uploads/2022/12/12-768x513.jpg'
+            url: PS9L
         },
         {
-            url: 'https://sepucuksurat.id/wp-content/uploads/2022/12/12-768x513.jpg'
+            url: PS1L
         }
     ]
     return (

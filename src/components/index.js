@@ -8,6 +8,7 @@ import DigitalGift from "./DigitalGift";
 import Galleries from "./Galleries";
 import WishingAndGreeting from "./WishingAndGreeting";
 import Footer from "./Footer";
+import Carousel from "./Carousel";
 
 export {
     Hero,
@@ -19,5 +20,6 @@ export {
     DigitalGift,
     Galleries,
     WishingAndGreeting,
-    Footer
+    Footer,
+    Carousel
 }

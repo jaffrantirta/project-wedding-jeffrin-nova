@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImgLove, ImgMandala } from '../../asstes'
+import { ImgBride, ImgGroom, ImgLove } from '../../asstes'
 import CardBrideGroom from '../CardBrideGroom'
 
 export default function BrideGroom() {
@@ -11,7 +11,7 @@ export default function BrideGroom() {
                 childOf={`Putra pertama dari pasangan`}
                 name={`Jeffrin`}
                 fullName={`Jeffrin Martina Adi Saputra`}
-                img={ImgMandala} />
+                img={ImgGroom} />
             <div className={`grid justify-center content-center`}>
                 <img alt='love' src={ImgLove} className={`w-15 h-15`} />
             </div>
@@ -21,7 +21,7 @@ export default function BrideGroom() {
                 childOf={`Putri pertama dari pasangan`}
                 name={`Novania`}
                 fullName={`Luh Novania Lestari`}
-                img={ImgMandala} />
+                img={ImgBride} />
         </section>
     )
 }

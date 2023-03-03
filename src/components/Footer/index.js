@@ -13,7 +13,7 @@ export default function Footer() {
     ]
     return (
         <section className='h-fit'>
-            <Carousel images={images} text={`Jeffrin & Novania`} topText={`- Terima Kasih -`} />
+            <Carousel images={images} text={`Jeffrin & Novania`} topText={`- Terima Kasih -`} botText={`supported by Jaffran`} />
         </section>
     )
 }

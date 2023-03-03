@@ -1,9 +1,21 @@
 import React from 'react'
-import { PS1L, PS2L, PS3P, PS6P, PS7P, PS8P, PS9L } from '../../asstes'
+import { ImgBride, ImgGroom, PS1L, PS2L, PS3P, PS6P, PS7P, PS8P, PS9L } from '../../asstes'
 import Photo from '../Photo'
 
 export default function Galleries() {
     const images = [
+        {
+            url: ImgGroom,
+            duration: '1000',
+            translateVisible: '-translate-x-0',
+            translateInvisible: '-translate-x-20'
+        },
+        {
+            url: ImgBride,
+            duration: '700',
+            translateVisible: 'translate-y-0',
+            translateInvisible: 'translate-y-20'
+        },
         {
             url: PS3P,
             duration: '1000',

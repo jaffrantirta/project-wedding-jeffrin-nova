@@ -52,7 +52,7 @@ export default function Photo({ img, duration = '500', translateVisible = 'trans
                     <Button text={`close`} onClick={() => handleCloseClick()} customStyle={`fixed top-0 right-0 m-4 text-white bg-black p-2 mt-32`} />
                 </div>
             )}
-            <div ref={sectionRef} className={`w-full h-full rounded-3xl transition-all duration-${duration} ${isVisible ? 'opacity-100 ' + translateVisible : 'opacity-0 ' + translateInvisible}`}>
+            <div ref={sectionRef} className={`w-full h-full bg-primary rounded-3xl transition-all duration-${duration} ${isVisible ? 'opacity-100 ' + translateVisible : 'opacity-0 ' + translateInvisible}`}>
                 <img alt='gallery' src={img} className='h-full w-full rounded-3xl object-cover' onClick={handleImageClick} />
             </div>
         </div>

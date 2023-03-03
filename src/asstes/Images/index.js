@@ -7,6 +7,7 @@ import ImgPakaiMasker from './pakai-masker.png'
 import ImgSanti from './om-santi.png'
 import ImgBCA from './bca.png'
 import ImgBgWedding from './bg-wedding.png'
+import ImgCircle from './circle.png'
 
 export {
     ImgSwastyastu,
@@ -17,5 +18,6 @@ export {
     ImgPakaiMasker,
     ImgSanti,
     ImgBCA,
-    ImgBgWedding
+    ImgBgWedding,
+    ImgCircle
 }

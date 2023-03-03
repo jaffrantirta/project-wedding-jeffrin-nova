@@ -28,7 +28,7 @@ export default function Greeting() {
     }, [])
     const handleButtonClick = () => {
         togglePlay()
-        navigate('/invition')
+        navigate('/invitation')
     }
 
     return (

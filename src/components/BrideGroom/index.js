@@ -10,7 +10,7 @@ export default function BrideGroom() {
                 address={`Br. Tegal Kangin, Desa Ubung Kaja, Denpasar`}
                 childOf={`Putra pertama dari pasangan`}
                 name={`Jeffrin`}
-                fullName={`Jeffrin Martina Adi Saputra`}
+                fullName={`Jeffrin Martiana Adi Saputra`}
                 img={ImgGroom} />
             <div className={`grid justify-center content-center`}>
                 <img alt='love' src={ImgLove} className={`w-15 h-15`} />

@@ -1,17 +1,17 @@
 import React from 'react'
-import { ImgBride, ImgGroom, PS1L, PS2L, PS3P, PS6P, PS7P, PS8P, PS9L } from '../../assets'
+import { ImgBride2, ImgGroom2, PS1L, PS2L, PS3P, PS6P, PS7P, PS8P, PS9L } from '../../assets'
 import Photo from '../Photo'
 
 export default function Galleries() {
     const images = [
         {
-            url: ImgGroom,
+            url: ImgGroom2,
             duration: '1000',
             translateVisible: '-translate-x-0',
             translateInvisible: '-translate-x-20'
         },
         {
-            url: ImgBride,
+            url: ImgBride2,
             duration: '700',
             translateVisible: 'translate-y-0',
             translateInvisible: 'translate-y-20'

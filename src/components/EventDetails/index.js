@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ImgCuciTangan, ImgJagaJarak, ImgPakaiMasker } from '../../assets/Images';
+import { DETAILS_EVENT } from '../../utils/Constant';
 import Button from '../Button';
 
-export default function EventDetails() {
+export default function EventDetails({ version }) {
     const sectionRef = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
     useEffect(() => {
@@ -34,9 +35,9 @@ export default function EventDetails() {
             <div className={`text-sm md:text-xl border-2 border-primary p-2 md:p-10 rounded-3xl text-center w-5/6 shadow-2xl`}>
                 <p className={`mb-7 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>Merupakan suatu kehormatan dan kebahagiaan kami apabila Bapak/Ibu/Saudara/i berkenan hadir memberikan doa restu.</p>
                 <p className={`text-2xl md:text-6xl font-third mb-7 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>Resepsi Pawiwahan</p>
-                <p className={`text-sm md:text-xl transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>Minggu, 16 April 2023</p>
-                <p className={`text-sm md:text-xl transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>Pukul 13.00 WITA - Selesai</p>
-                <p className={`text-sm md:text-xl transition-all duration-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'} mb-7`}>Br. Apuan, Desa Apuan, Kecamatan Baturiti, Tabanan</p>
+                <p className={`text-sm md:text-xl transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>{DETAILS_EVENT[version].date}</p>
+                <p className={`text-sm md:text-xl transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>{DETAILS_EVENT[version].time}</p>
+                <p className={`text-sm md:text-xl transition-all duration-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'} mb-7`}>{DETAILS_EVENT[version].address}</p>
                 <Button customStyle={`transition-all duration-150 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`} text={`Map Lokasi Acara`} />
             </div>
             <div className={`text-sm md:text-xl p-2 md:p-10 rounded-3xl text-center w-5/6`}>

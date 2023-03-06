@@ -4,7 +4,7 @@ import { BgMusic, PS2L } from '../../assets'
 import { Carousel } from '../../components'
 
 export default function Greeting() {
-    const { search } = useLocation();
+    const { search } = useLocation()
     const queryParams = new URLSearchParams(search);
     const navigate = useNavigate()
     const [isPlaying, setIsPlaying] = useState(false)
@@ -28,7 +28,9 @@ export default function Greeting() {
     }, [])
     const handleButtonClick = () => {
         togglePlay()
-        navigate('/invitation')
+        let data = { state: { version: queryParams.has('version') ? queryParams.get('version') : 'apuan' } }
+        console.log(data);
+        navigate(`/invitation`, data)
     }
 
     return (

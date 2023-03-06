@@ -8,6 +8,8 @@ import PS8P from './ps8P.png'
 import PS9L from './ps9L.png'
 import ImgGroom from './groom.png'
 import ImgBride from './bride.png'
+import ImgGroom2 from './groom2.png'
+import ImgBride2 from './bride2.png'
 
 export {
     PS1L,
@@ -19,5 +21,7 @@ export {
     PS8P,
     PS9L,
     ImgBride,
-    ImgGroom
+    ImgGroom,
+    ImgBride2,
+    ImgGroom2
 }

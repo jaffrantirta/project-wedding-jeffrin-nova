@@ -23,8 +23,10 @@ const Carousel = ({ infoText, infoTextStyle, isTop = false, text, topText, botTe
             <Slider {...settings}>
                 {images.map((item, index) => {
                     return (
-                        <div key={index} className={`${bgColorImage}`}>
-                            {isLoading ? <Loader loadText={`Loading...`} /> : <></>}
+                        <div key={index} className={`${bgColorImage} relative`}>
+                            <div className={`absolute top-0 left-0 w-full h-full flex items-center justify-center ${isLoading ? '' : 'hidden'}`}>
+                                <Loader loadText={`Loading...`} />
+                            </div>
                             <div>
                                 <img
                                     onLoad={() => setIsLoading(false)}
@@ -35,6 +37,7 @@ const Carousel = ({ infoText, infoTextStyle, isTop = false, text, topText, botTe
                                 />
                             </div>
                         </div>
+
                     );
                 })}
             </Slider>

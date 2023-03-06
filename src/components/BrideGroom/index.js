@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImgBride, ImgGroom, ImgLove } from '../../asstes'
+import { ImgBride, ImgGroom, ImgLove } from '../../assets'
 import CardBrideGroom from '../CardBrideGroom'
 
 export default function BrideGroom() {

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ImgMandala, ImgSwastyastu } from '../../asstes';
+import { ImgMandala, ImgSwastyastu } from '../../assets';
 
 export default function Greeting() {
     const sectionRef = useRef(null)

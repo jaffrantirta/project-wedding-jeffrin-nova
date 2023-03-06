@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { BgMusic, PS2L } from '../../asstes'
+import { BgMusic, PS2L } from '../../assets'
 import { Carousel } from '../../components'
 
 export default function Greeting() {

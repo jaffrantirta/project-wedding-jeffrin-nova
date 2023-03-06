@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ImgBCA, ImgSanti } from '../../asstes'
+import { ImgBCA, ImgSanti } from '../../assets'
 import Button from '../Button'
 
 export default function DigitalGift() {

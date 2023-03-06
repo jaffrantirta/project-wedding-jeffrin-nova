@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ImgCircle } from '../../asstes';
+import { ImgCircle } from '../../assets';
 
 export default function CardBrideGroom({ img, name, fullName, parentsName, address, childOf }) {
     const sectionRef = useRef(null);

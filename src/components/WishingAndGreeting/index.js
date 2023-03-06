@@ -4,7 +4,7 @@ import config from './../../aws-exports'
 import InputRounded from '../InputRounded'
 import Button from '../Button'
 import ProfilePicture from '../ProfilePicture'
-import { ImgMandala } from '../../asstes'
+import { ImgMandala } from '../../assets'
 
 Amplify.configure(config)
 

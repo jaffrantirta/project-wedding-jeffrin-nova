@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ImgCuciTangan, ImgJagaJarak, ImgPakaiMasker } from '../../asstes/Images';
+import { ImgCuciTangan, ImgJagaJarak, ImgPakaiMasker } from '../../assets/Images';
 import Button from '../Button';
 
 export default function EventDetails() {

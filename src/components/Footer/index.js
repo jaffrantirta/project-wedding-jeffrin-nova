@@ -1,5 +1,5 @@
 import React from 'react'
-import { PS1L, PS2L } from '../../asstes'
+import { PS1L, PS2L } from '../../assets'
 import Carousel from '../Carousel'
 
 export default function Footer() {

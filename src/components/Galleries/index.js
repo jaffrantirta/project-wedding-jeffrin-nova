@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImgBride, ImgGroom, PS1L, PS2L, PS3P, PS6P, PS7P, PS8P, PS9L } from '../../asstes'
+import { ImgBride, ImgGroom, PS1L, PS2L, PS3P, PS6P, PS7P, PS8P, PS9L } from '../../assets'
 import Photo from '../Photo'
 
 export default function Galleries() {

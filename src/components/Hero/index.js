@@ -1,5 +1,5 @@
 import React from 'react'
-import { PS1L, PS9L } from '../../asstes/PhotoShots';
+import { PS1L, PS9L } from '../../assets/PhotoShots';
 import Carousel from '../Carousel';
 
 export default function Hero() {

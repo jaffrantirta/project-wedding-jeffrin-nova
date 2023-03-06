@@ -23,7 +23,7 @@ const Carousel = ({ infoText, infoTextStyle, isTop = false, text, topText, botTe
             <Slider {...settings}>
                 {images.map((item, index) => {
                     return (
-                        <div className={`${bgColorImage}`}>
+                        <div key={index} className={`${bgColorImage}`}>
                             {isLoading ? <Loader loadText={`Loading...`} /> : <></>}
                             <div>
                                 <img

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { ImgCuciTangan, ImgJagaJarak, ImgPakaiMasker } from '../../assets/Images';
 import { DETAILS_EVENT } from '../../utils/Constant';
 import Button from '../Button';
+import Modal from '../Modal';
 
 export default function EventDetails({ version }) {
     const sectionRef = useRef(null);
@@ -30,6 +31,8 @@ export default function EventDetails({ version }) {
             }
         };
     }, [sectionRef]);
+
+    const [isOpen, setOpen] = useState(false)
     return (
         <section ref={sectionRef} className={`h-fit font-primary p-2 md:p-10 origin-center flex flex-col gap-3 justify-center items-center text-primary`}>
             <div className={`text-sm md:text-xl border-2 border-primary p-2 md:p-10 rounded-3xl text-center w-5/6 shadow-2xl`}>
@@ -38,7 +41,15 @@ export default function EventDetails({ version }) {
                 <p className={`text-sm md:text-xl transition-all duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>{DETAILS_EVENT[version].date}</p>
                 <p className={`text-sm md:text-xl transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>{DETAILS_EVENT[version].time}</p>
                 <p className={`text-sm md:text-xl transition-all duration-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'} mb-7`}>{DETAILS_EVENT[version].address}</p>
-                <Button customStyle={`transition-all duration-150 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`} text={`Map Lokasi Acara`} />
+                <Button onClick={() => setOpen(true)} customStyle={`transition-all duration-150 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`} text={`Map Lokasi Acara`} />
+                <Modal
+                    isOpen={isOpen}
+                    setOpen={(e) => setOpen(e)}
+                    title={`Lokasi acara`}
+                    message={`catatan: Untuk akses jalan bisa melalui pintu utara (Depan Pura KJL Natar Sari)`}
+                    primaryButtonText={`Buka Google Maps`}
+                    primaryButtonLink={`https://ngantre.com`}
+                />
             </div>
             <div className={`text-sm md:text-xl p-2 md:p-10 rounded-3xl text-center w-5/6`}>
                 <div className={`mb-5`}>

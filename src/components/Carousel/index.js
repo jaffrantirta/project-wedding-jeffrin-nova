@@ -1,14 +1,12 @@
-import React, {
-    // useState,
-    // useEffect 
-} from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Button from '../Button';
+import Loader from '../Loader';
 
 const Carousel = ({ infoText, infoTextStyle, isTop = false, text, topText, botText, images, isMiddle = false, botBoldText, botBoldTextStyle, withButton = false, onClickButton, buttonText, bgColorImage = 'bg-black', opacityImage = 'opacity-50' }) => {
-
+    const [isLoading, setIsLoading] = useState(true)
     const settings = {
         dots: false,
         infinite: true,
@@ -26,9 +24,18 @@ const Carousel = ({ infoText, infoTextStyle, isTop = false, text, topText, botTe
                 {images.map((item, index) => {
                     return (
                         <div className={`${bgColorImage}`}>
-                            <img key={index} className={`w-full h-screen object-cover ${opacityImage}`} src={item.url} alt={`slide-${index}`} />
+                            {isLoading ? <Loader loadText={`Loading...`} /> : <></>}
+                            <div>
+                                <img
+                                    onLoad={() => setIsLoading(false)}
+                                    key={index}
+                                    className={`w-full h-screen object-cover ${opacityImage}`}
+                                    src={item.url}
+                                    alt={`slide-${index}`}
+                                />
+                            </div>
                         </div>
-                    )
+                    );
                 })}
             </Slider>
             <div className="absolute inset-0"></div>

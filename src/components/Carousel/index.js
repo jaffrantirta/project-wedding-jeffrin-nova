@@ -37,7 +37,6 @@ const Carousel = ({ infoText, infoTextStyle, isTop = false, text, topText, botTe
                                 />
                             </div>
                         </div>
-
                     );
                 })}
             </Slider>

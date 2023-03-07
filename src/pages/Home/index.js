@@ -18,7 +18,7 @@ export default function Home() {
       <Hero version={version} />
       <Greeting />
       <BrideGroom />
-      <Countdown />
+      <Countdown version={version} />
       <EventDetails version={version} />
       <Spell />
       <DigitalGift />

@@ -46,9 +46,10 @@ export default function EventDetails({ version }) {
                     isOpen={isOpen}
                     setOpen={(e) => setOpen(e)}
                     title={`Lokasi acara`}
-                    message={`catatan: Untuk akses jalan bisa melalui pintu utara (Depan Pura KJL Natar Sari)`}
+                    message={DETAILS_EVENT[version].noteAddress}
                     primaryButtonText={`Buka Google Maps`}
-                    primaryButtonLink={`https://ngantre.com`}
+                    primaryButtonLink={DETAILS_EVENT[version].maps}
+                    iframeLink={DETAILS_EVENT[version].iframeLink}
                 />
             </div>
             <div className={`text-sm md:text-xl p-2 md:p-10 rounded-3xl text-center w-5/6`}>

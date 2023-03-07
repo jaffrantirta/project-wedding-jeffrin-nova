@@ -9,7 +9,7 @@ export const DETAILS_EVENT = {
     },
     pupuan: {
         date: 'Senin, 17 April 2023',
-        time: 'Pukul 13.00 WITA - Selesai',
+        time: 'Pukul 08.00 WITA - Selesai',
         address: 'Br. Kayupuring, Desa Pupuan, Kecamatan Pupuan, Tabanan',
         maps: 'https://maps.app.goo.gl/C1xVGSCy2TM8qUXT7?g_st=iw',
         noteAddress: 'catatan: masuk gang di pohon beringin turun keselatan',
